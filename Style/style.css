@@ -1,0 +1,157 @@
+body {
+    background-color: #e9f5f8;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .header {
+    background-color: #288b8f;
+    color: #ffffff;
+    font-size: 1.8em;
+    padding: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .table-users {
+    border: 1px solid #288b8f;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: calc(100% - 2em);
+    margin: 1.5em auto;
+    overflow: hidden;
+    width: 800px;
+    background-color: #ffffff;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  table td, table th {
+    color: #2a686e;
+    padding: 12px;
+  }
+  
+  table td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  table td:last-child {
+    font-size: 0.95em;
+    line-height: 1.4;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #cfecef;
+    font-weight: 400;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f7fcfc;
+  }
+  
+  table tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  @media screen and (max-width: 700px) {
+    table, tr, td {
+      display: block;
+    }
+  
+    td:first-child {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 80px;
+    }
+  
+    td:not(:first-child) {
+      margin-left: 100px;
+      padding: 4px 20px 4px 90px;
+      position: relative;
+      text-align: left;
+    }
+  
+    td:not(:first-child):before {
+      color: #6cbdc4;
+    }
+  
+    td:nth-child(2):before {
+      content: 'Name:';
+    }
+  
+    td:nth-child(3):before {
+      content: 'Email:';
+    }
+  
+    td:nth-child(4):before {
+      content: 'Phone:';
+    }
+  
+    td:nth-child(5):before {
+      content: 'Comments:';
+    }
+  
+    tr {
+      padding: 10px 0;
+      position: relative;
+    }
+  
+    tr:first-child {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .header {
+      font-size: 1.6em;
+      font-weight: bold;
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+    }
+  
+    img {
+      border: 2px solid #cfecef;
+      height: 80px;
+      margin: 0.5rem 0;
+      width: 80px;
+    }
+  
+    td:first-child {
+      background-color: #d0e8eb;
+      border-bottom: 1px solid #cfecef;
+      border-radius: 10px 10px 0 0;
+      width: 100%;
+    }
+  
+    td:not(:first-child) {
+      padding: 6px 1em;
+      width: 100%;
+    }
+  
+    td:not(:first-child):before {
+      font-size: 0.9em;
+      padding-top: 0.2em;
+    }
+  
+    td:last-child {
+      padding-bottom: 1rem !important;
+    }
+  
+    tr {
+      background-color: white !important;
+      border: 1px solid #288b8f;
+      border-radius: 
+  
